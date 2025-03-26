@@ -30,12 +30,8 @@ const Footer = () => {
   // const router = useRouter();
   
   const handleDownload = () => {
-    const url = 'https://drive.google.com/uc?export=download&id=1de52aqLRAY14-zAoJ7NN5rk_aogXuKR7';
-    const a = document.createElement('a');
-    a.href = url;
-    a.target = '_blank';
-    a.rel = 'noopener noreferrer';
-    a.click();
+    const url = 'https://loganihrishi-resume.s3.us-east-1.amazonaws.com/Hrishi+Logani_Resume_S3.pdf';
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -73,7 +69,7 @@ const Footer = () => {
                       <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-[3px] bg-white dark:bg-[#101012] px-3 py-1 text-xs text-[#1C2024] dark:text-[#EDEEF0] backdrop-blur-3xl gap-[6px]">
                         <Image src={'/download_dark.svg'} alt="" height={17} width={17} className='hidden dark:inline' />
                         <Image src={'/download_light.svg'} alt="" height={17} width={17} className='inline dark:hidden' />
-                        Download Current CV
+                        View Current CV
                       </span>
                     </button>
                   </Link>
